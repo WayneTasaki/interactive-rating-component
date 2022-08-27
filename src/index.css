@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Overpass;
+}
+:root {
+  --black-gradient: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+  --very-dark-blue: #131518;
+  --dark-blue: #262E38;
+  --medium-grey: #7C8798;
+  --light-grey: #969FAD;
+  --orange: #FC7614;
+  --off-white: #f3f3f3;
+  --pure-white: #FFFFFF;
+  background: var(--very-dark-blue);
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+.main-card {
+  background: var(--black-gradient);
+  max-width: 412px;
+  padding: 32px 39px 0 32px;
+  width: 412px;
+  border-radius: 30px;
+}
+.star-icon-circle {
+  /* padding: 13px 25px; */
+  display: flex;
+  justify-content: center;
+  background: var(--dark-blue);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 30px;
+}
+.star-icon {
+  text-align: center;
+  scale: 0.35;
+}
+h1 {
+  color: var(--pure-white);
+  margin-bottom: 25px;
+}
+.main-text {
+  color: var(--light-grey);
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+
+
+.rating-wrapper {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 30px;
+}
+.rating-icon {
+  /* padding: 13px 21px; */
+  width: 51px;
+  height: 51px;
+  background: var(--dark-blue);
+  border-radius: 50%;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--medium-grey);
+}
+.rating-icon:hover {
+  background: var(--orange);
+  color: var(--pure-white);
+  cursor: pointer;
+}
+.rating-icon:active {
+  background: var(--light-grey);
+}
+.selected-icon {
+  background: var(--light-grey);
+  color: var(--pure-white);
+}
+button {
+  background: var(--orange);
+  border-style: none;
+  border-radius: 22.5px;
+  padding: 11px 138px;
+  line-height: 19px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--pure-white);
+  transition: .2s;
+  margin-bottom: 32px;
+}
+button:hover {
+  background: var(--pure-white);
+  color: var(--orange);
+}
+button:active {
+  background: var(--off-white);
+}
+
+
+
+
+/* attribution */
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
