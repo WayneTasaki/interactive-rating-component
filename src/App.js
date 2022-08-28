@@ -1,10 +1,14 @@
+import { Route, Routes, Router, BrowserRouter } from "react-router-dom";
 import "./index.css";
-import RatingCard from "./RatingCard";
+import MainCard from "./MainCard";
+
 
 function App() {
   
   return (
-    <RatingCard/>
+    <MainCard/>
+
+    
   );
 }
 

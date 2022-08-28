@@ -1,12 +1,14 @@
 import { useState } from "react";
 
-const Rating = (num) => {
-  const [rating, setRating] = useState();
+const Rating = (props) => {
+  const [rating, setRating] = useState(null);
+  const [wasRated, setWasRated] = useState(false);
   const ratingNum = [1, 2, 3, 4, 5];
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // route to thank you component
+    props.onSubmit(wasRated);
+    // props.onSubmit(rating)
   };
   return (
     <div className="rating-component">
@@ -19,7 +21,8 @@ const Rating = (num) => {
               }
               key={nums}
               onClick={() => {
-                setRating(nums);
+                setRating(nums)
+                setWasRated(true);
               }}
             >
               <span className="num">{nums}</span>
