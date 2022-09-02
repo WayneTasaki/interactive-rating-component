@@ -1,4 +1,4 @@
-<div align="center" width="5"><img src="/src/images/screenshot.png"></img></div>
+<div align="center"><img src="/src/images/screenshot.png" width="50"></img></div>
 <h1 align="center">Interactive Rating Component</h1>
 
 <div align="center">
