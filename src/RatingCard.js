@@ -6,7 +6,7 @@ const RatingCard = () => {
       <div className="star-icon-circle">
         <img src={starIcon} alt="" className="star-icon" />
       </div>
-      <h1>How did we do?</h1>
+      <h1 className="main-heading">How did we do?</h1>
       <p className="main-text">
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!

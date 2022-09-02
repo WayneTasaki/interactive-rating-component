@@ -1,15 +1,23 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import RatingContext from "./RatingContext";
 
 const Rating = (props) => {
-  const [rating, setRating] = useState(null);
-  const [wasRated, setWasRated] = useState(false);
+  const { rating, setRating, wasRated, setWasRated, inProp, setInProp } =
+    useContext(RatingContext);
+
   const ratingNum = [1, 2, 3, 4, 5];
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.onSubmit(wasRated);
-    // props.onSubmit(rating)
+    // could eventually POST submitted rating to db
   };
+
+  const handleClick = (rating) => {
+    if(rating >= 1) {
+      setWasRated(true)
+      setInProp(true)
+    }
+  }
   return (
     <div className="rating-component">
       <form onSubmit={handleSubmit}>
@@ -21,8 +29,7 @@ const Rating = (props) => {
               }
               key={nums}
               onClick={() => {
-                setRating(nums)
-                setWasRated(true);
+                setRating(nums);
               }}
             >
               <span className="num">{nums}</span>
@@ -30,7 +37,7 @@ const Rating = (props) => {
           ))}
         </div>
 
-        <button type="submit">SUBMIT</button>
+        <button type="submit" onClick={() => handleClick(rating)}>SUBMIT</button>
       </form>
     </div>
   );
