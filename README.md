@@ -3,7 +3,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://waynetasaki.github.io/interactive-rating-component/>🌐 Live Site </a>  |  
+    <a href="https://waynetasaki.github.io/interactive-rating-component"/>🌐 Live Site </a>  |  
     <a href="#"> Solution </a> | 
     <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI"> Challenge </a> 
   </h3>
